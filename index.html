@@ -17,7 +17,7 @@
     <body>
 
         <!-- Navbar -->
-        <div class="navbar-wrapper" id="accueil">
+        <div class="navbar-wrapper" id="bloc_accueil">
             <!-- Container -->
             <div class="container">
                 <div class="navbar navbar-inverse navbar-static-top">
@@ -33,12 +33,12 @@
                         </div>
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="#accueil">Accueil</a></li>
-                                <li><a href="#apropos">Qui sommes nous ?</a></li>
-                                <li><a href="#menu">Que propose t-on ?</a></li>
-                                <li><a href="#ou">Ou sommes nous ?</a></li>
-                                <li><a href="#contact">Comment nous contactez ?</a></li>
-                                <li><a href="#blabla">On parle de nous ?</a></li>
+                                <li class="active"><a href="#bloc_accueil">Accueil</a></li>
+                                <li><a href="#bloc_apropos">Qui sommes nous ?</a></li>
+                                <li><a href="#bloc_menu">Que propose t-on ?</a></li>
+                                <li><a href="#bloc_ou">Ou sommes nous ?</a></li>
+                                <li><a href="#bloc_contact">Comment nous contactez ?</a></li>
+                                <li><a href="#bloc_blabla">On parle de nous ?</a></li>
                             </ul>
                         </div>
                     </div>
@@ -103,7 +103,7 @@
         <!-- Bloc Container -->
         <div class="container marketing">
             <!-- Bloc pour la partie A propos -->
-            <div class="container" id="apropos">
+            <div class="container" id="bloc_apropos">
                 <!-- Ligne -->
                 <div class="row featurette">
                     <!-- Colonne -->
@@ -119,16 +119,16 @@
                     <!-- Fin Colonne -->
                 </div>
                 <!-- Fin ligne -->
-                <p class="pull-right"><a href="#accueil">Revenir tout la haut.</a></p>
+                <p class="pull-right"><a href="#bloc_accueil">Revenir tout la haut.</a></p>
             </div>
             <!-- Fin bloc A propos -->
 
             <hr class="featurette-divider">
             
             <!-- Bloc pour la partie Menu -->
-            <div class="container" id="menu">
+            <div class="container" id="bloc_menu">
                 <!-- Ligne -->
-                <div class="row featurette" id="menu">
+                <div class="row featurette">
                     <!-- Colonne -->
                     <div class="col-md-5">
                         <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
@@ -142,14 +142,14 @@
                     <!-- Fin Colonne -->
                 </div>
                 <!-- Fin ligne -->
-                <p class="pull-right"><a href="#accueil">Revenir tout la haut.</a></p>
+                <p class="pull-right"><a href="#bloc_accueil">Revenir tout la haut.</a></p>
             </div>
             <!-- Fin bloc Menu -->
 
             <hr class="featurette-divider">
 
             <!-- Bloc pour la partie Ou -->
-            <div class="container" id="ou">
+            <div class="container" id="bloc_ou">
                 <!-- Ligne -->
                 <div class="row featurette">
                     <!-- Colonne -->
@@ -181,15 +181,15 @@
                 </div>                    
  
                 <!-- Fin ligne -->
-                <p class="pull-right"><a href="#accueil">Revenir tout la haut.</a></p>
+                <p class="pull-right"><a href="#bloc_accueil">Revenir tout la haut.</a></p>
             </div>
 
             <hr class="featurette-divider">
 
             <!-- Bloc pour la partie Contact -->
-            <div class="container" id="contact">
+            <div class="container" id="bloc_contact">
                 <!-- Ligne -->
-                <div class="row featurette" id="contact">
+                <div class="row featurette">
                     <!-- Colonne -->
                     <div class="col-md-5">
                         <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
@@ -225,16 +225,16 @@
                     </div>
                 </div>
                 <!-- Fin du bloc reseau sociaux -->
-                <p class="pull-right"><a href="#accueil">Revenir tout la haut.</a></p>
+                <p class="pull-right"><a href="#bloc_accueil">Revenir tout la haut.</a></p>
             </div>
             <!-- Fin bloc Contact -->
 
             <hr class="featurette-divider">
 
             <!-- Bloc pour la partie On parle de nous -->
-            <div class="container" id="blabla">
+            <div class="container" id="bloc_blabla">
                 <!-- Ligne -->
-                <div class="row featurette" id="blabla">
+                <div class="row featurette">
                     <!-- Colonne -->
                     <div class="col-md-7">
                         <h2 class="featurette-heading">On parle de nous</h2>
@@ -308,7 +308,7 @@
                 </div>
                 <!-- Fin ligne -->
 
-                <p class="pull-right"><a href="#accueil">Revenir tout la haut.</a></p>
+                <p class="pull-right"><a href="#bloc_accueil">Revenir tout la haut.</a></p>
             </div>
             <!-- Fin bloc On parle de nous -->
 
@@ -332,7 +332,7 @@
         <script>
             $(document).ready(function() {
                 /* ScrollTo */
-                $('a[href^="#"]').click(function() {
+                $('a[href^="#bloc"]').click(function() {
                     var id_anchor = $(this).attr('href');
                     $('html,body').animate( {
                         scrollTop:$(id_anchor).offset().top
