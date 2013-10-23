@@ -17,7 +17,7 @@
     <body>
 
         <!-- Navbar -->
-        <div class="navbar-wrapper">
+        <div class="navbar-wrapper" id="accueil">
             <!-- Container -->
             <div class="container">
                 <div class="navbar navbar-inverse navbar-static-top">
@@ -33,10 +33,10 @@
                         </div>
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Accueil</a></li>
-                                <li><a href="#about">Qui sommes nous ?</a></li>
-                                <li><a href="#works">Que propose t-on ?</a></li>
-                                <li><a href="#loc">Ou sommes nous ?</a></li>
+                                <li class="active"><a href="#accueil">Accueil</a></li>
+                                <li><a href="#apropos">Qui sommes nous ?</a></li>
+                                <li><a href="#menu">Que propose t-on ?</a></li>
+                                <li><a href="#ou">Ou sommes nous ?</a></li>
                                 <li><a href="#contact">Comment nous contactez ?</a></li>
                             </ul>
                         </div>
@@ -102,7 +102,7 @@
         <!-- Bloc Container -->
         <div class="container marketing">
             <!-- Ligne -->
-            <div class="row featurette" id="about">
+            <div class="row featurette" id="apropos">
                 <!-- Colonne -->
                 <div class="col-md-7">
                     <h2 class="featurette-heading">Qui sommes-nous ?</h2>
@@ -114,14 +114,14 @@
                     <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
                 </div>
                 <!-- Fin Colonne -->
-                <p class="pull-right"><a href="#">Revenir tout la haut.</a></p>
+                <p class="pull-right"><a href="#accueil">Revenir tout la haut.</a></p>
             </div>
             <!-- Fin ligne -->
 
             <hr class="featurette-divider">
 
             <!-- Ligne -->
-            <div class="row featurette" id="works">
+            <div class="row featurette" id="menu">
                 <!-- Colonne -->
                 <div class="col-md-5">
                     <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
@@ -133,14 +133,14 @@
                     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                 </div>
                 <!-- Fin Colonne -->
-                <p class="pull-right"><a href="#">Revenir tout la haut.</a></p>
+                <p class="pull-right"><a href="#accueil">Revenir tout la haut.</a></p>
             </div>
             <!-- Fin ligne -->
 
             <hr class="featurette-divider">
 
             <!-- Ligne -->
-            <div class="row featurette" id="loc">
+            <div class="row featurette" id="ou">
                 <!-- Colonne -->
                 <div class="col-md-7">
                     <h2 class="featurette-heading">Où sommes-nous ?</h2>
@@ -152,7 +152,7 @@
                     <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
                 </div>
                 <!-- Fin Colonne -->
-                <p class="pull-right"><a href="#">Revenir tout la haut.</a></p>
+                <p class="pull-right"><a href="#accueil">Revenir tout la haut.</a></p>
             </div>
             <!-- Fin ligne -->
 
@@ -171,7 +171,7 @@
                     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                 </div>
                 <!-- Fin Colonne -->
-                <p class="pull-right"><a href="#">Revenir tout la haut.</a></p>
+                <p class="pull-right"><a href="#accueil">Revenir tout la haut.</a></p>
             </div>
             <!-- Fin ligne -->
 
@@ -179,7 +179,7 @@
 
             <!-- Bloc bas de page -->
             <footer>
-                <p class="pull-right"><a href="#">Revenir tout la haut.</a></p>
+                <p class="pull-right"><a href="#accueil">Revenir tout la haut.</a></p>
                 <p>&copy; 2013 Company, Inc.</p>
             </footer>
             <!-- Fin bloc bas de page -->
@@ -191,6 +191,20 @@
         <script src="js/jquery-1.10.2.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/holder.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                /* ScrollTo */
+                $('a[href^="#"]').click(function() {
+                    var id_anchor = $(this).attr('href');
+                    $('html,body').animate( {
+                        scrollTop:$(id_anchor).offset().top
+                    }, 'slow');
+                    return false;
+                });
+                /* Fin ScrollTo */
+            });
+        </script>
         <!-- Fin Javascript -->
 
     </body>
