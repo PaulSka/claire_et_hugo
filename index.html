@@ -11,6 +11,7 @@
         <!-- CSS -->
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/claire_et_hugo.css" rel="stylesheet">
+        <link href="css/leaflet.css" rel="stylesheet">
         <!-- Fin CSS -->
     </head>
 
@@ -175,7 +176,7 @@
                     <!-- Fin Colonne -->
                     <!-- Colonne -->
                     <div class="col-md-5">
-                        <img class="featurette-image img-thumbnail img-responsive" src="img/img03.jpg">
+                        <div id="map"></div>
                     </div>
                     <!-- Fin Colonne -->
                 </div>                     
@@ -269,6 +270,7 @@
         <script src="js/jquery-1.10.2.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/holder.js"></script>
+        <script src="js/leaflet.js"></script>
 
         <script>
             $(document).ready(function() {
@@ -281,9 +283,24 @@
                     return false;
                 });
                 /* Fin ScrollTo */
+                /* Leaflet */
+                var map = L.map('map', {
+                    center: [48.296592,4.0747349999999996],
+                    zoom: 16
+                });
+
+                L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                var marker = L.marker([48.296592, 4.0747349999999996]).addTo(map);
+                marker.bindPopup("<b>Salut !</b><br>On est ici.").openPopup();
+
+                /* Fin Leaflet */
             });
         </script>
         <!-- Fin Javascript -->
 
     </body>
 </html>
+
