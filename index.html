@@ -12,6 +12,8 @@
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/claire_et_hugo.css" rel="stylesheet">
         <link href="css/leaflet.css" rel="stylesheet">
+        <link href="css/jquery.neosmart.fb.wall.css" rel="stylesheet">
+
         <!-- Fin CSS -->
     </head>
 
@@ -237,7 +239,37 @@
                     <!-- Fin Colonne -->
                     <!-- Colonne -->
                     <div class="col-md-5">
-                        <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                        <div id="fb-root">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=631729640201409&amp;id=494973917210316" data-width="400">
+                                        <div class="fb-xfbml-parse-ignore">
+                                            <a href="https://www.facebook.com/permalink.php?story_fbid=631729640201409&amp;id=494973917210316">
+                                            Publication</a> de <a href="https://www.facebook.com/pages/Claire-et-Hugo/494973917210316">Claire et Hugo</a>.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=631312710243102&amp;id=494973917210316" data-width="400">
+                                        <div class="fb-xfbml-parse-ignore">
+                                            <a href="https://www.facebook.com/permalink.php?story_fbid=631312710243102&amp;id=494973917210316">
+                                            Publication</a> de <a href="https://www.facebook.com/pages/Claire-et-Hugo/494973917210316">Claire et Hugo</a>.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=629285590445814&amp;id=494973917210316"  data-width="400">
+                                        <div class="fb-xfbml-parse-ignore">
+                                            <a href="https://www.facebook.com/permalink.php?story_fbid=629285590445814&amp;id=494973917210316">Publication</a> de <a href="https://www.facebook.com/pages/Claire-et-Hugo/494973917210316">Claire et Hugo</a>.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- Fin Colonne -->
                 </div>
@@ -271,6 +303,7 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/holder.js"></script>
         <script src="js/leaflet.js"></script>
+        <script src="js/jquery.neosmart.fb.wall.js"></script>
 
         <script>
             $(document).ready(function() {
@@ -299,8 +332,22 @@
                 /* Fin Leaflet */
             });
         </script>
+
+        <!-- Fb script SDK :() -->
+
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
         <!-- Fin Javascript -->
 
     </body>
 </html>
+
 
