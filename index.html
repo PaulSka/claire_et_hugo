@@ -208,7 +208,12 @@
                     <!-- Colonne -->
                     <div class="col-md-7">
                         <h2 class="featurette-heading">Comment nous contactez ?</h2>
-                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                        <p class="lead">Nous sommes présent sur plusieurs réseaux. Vous pouvez nous contactez directement dessus ou bien par mail ou téléphone.</p>
+                        <button type="button" class="btn btn-lg btn-info">Twitter</button>
+                        <button type="button" class="btn btn-lg btn-info">Facebook</button>
+                        <button type="button" class="btn btn-lg btn-info">Google+</button>
+                        <button type="button" class="btn btn-lg btn-info">Mail</button>
+                        <button type="button" class="btn btn-lg btn-info">Téléphone</button>
                     </div>
                     <!-- Fin Colonne -->
                 </div>
@@ -235,11 +240,7 @@
                     <div class="col-md-7">
                         <h2 class="featurette-heading">On parle de nous</h2>
                         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                    </div>
-                    <!-- Fin Colonne -->
-                    <!-- Colonne -->
-                    <div class="col-md-5">
-                        <div id="fb-root">
+<div id="fb-root">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=631729640201409&amp;id=494973917210316" data-width="400">
@@ -270,6 +271,11 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <!-- Fin Colonne -->
+                    <!-- Colonne -->
+                    <div class="col-md-5">
+                        <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
                     </div>
                     <!-- Fin Colonne -->
                 </div>
@@ -303,49 +309,7 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/holder.js"></script>
         <script src="js/leaflet.js"></script>
-        <script src="js/jquery.neosmart.fb.wall.js"></script>
-
-        <script>
-            $(document).ready(function() {
-                /* ScrollTo */
-                $('a[href^="#bloc"]').click(function() {
-                    var id_anchor = $(this).attr('href');
-                    $('html,body').animate( {
-                        scrollTop:$(id_anchor).offset().top
-                    }, 'slow');
-                    return false;
-                });
-                /* Fin ScrollTo */
-                /* Leaflet */
-                var map = L.map('map', {
-                    center: [48.296592,4.0747349999999996],
-                    zoom: 16
-                });
-
-                L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-                    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                }).addTo(map);
-
-                var marker = L.marker([48.296592, 4.0747349999999996]).addTo(map);
-                marker.bindPopup("<b>Salut !</b><br>On est ici.").openPopup();
-
-                /* Fin Leaflet */
-            });
-        </script>
-
-        <!-- Fb script SDK :() -->
-
-        <script>
-            (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script>
-
-        <!-- Fin Javascript -->
+        <script src="js/claire_et_hugo.js"></script>
 
     </body>
 </html>
