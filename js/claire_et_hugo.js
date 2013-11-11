@@ -22,12 +22,10 @@ var marker = L.marker([48.296592, 4.0747349999999996]).addTo(map);
 marker.bindPopup("<b>Salut !</b><br>On est ici.").openPopup();
 /* Fin Leaflet */
 
-/* SDK Facebook */
-(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-/* Fin SDK Facebook */
+/* Facebook wall */
+$('#facebook_wall').facebook_wall({
+    id: '494973917210316',
+    access_token: '108285195955733|nBxyzkey6X69Aors5psTwDTOPPY',
+    limit: 10
+});
+/* Fin Facebook wall */

@@ -1,0 +1,63 @@
+/* FACEBOOK - WALL - ALT. STYLING 2 */
+
+#facebook_wall .facebook-loading { width: 16px; height: 16px; background: url('images/loader.png') no-repeat 50% 50%; margin-top: -8px; margin-left: -8px; position: absolute; top: 100px; left: 50%; }
+#facebook_wall .facebook-loading { -moz-animation: update-spinner 1s linear infinite; -webkit-animation: update-spinner 1s linear infinite; -ms-animation: update-spinner 1s linear infinite; animation: update-spinner 1s linear infinite; }
+
+#facebook_wall li { padding: 10px; display: none; position: relative; }
+#facebook_wall li.post { background: #fff; border: 1px solid #ccc; margin-bottom: 10px; }
+#facebook_wall li.post:after,
+#facebook_wall li.post:before { width: 0; height: 0; border: solid transparent; content: " "; position: absolute; right: 100%; pointer-events: none; }
+#facebook_wall li.post:after { border-color: rgba(255, 255, 255, 0); border-right-color: #ffffff; border-width: 10px; margin-top: -10px; top: 30px; }
+#facebook_wall li.post:before { border-color: rgba(204, 204, 204, 0); border-right-color: #cccccc; border-width: 11px; margin-top: -11px; top: 30px; }
+
+#facebook_wall li .meta-header { }
+#facebook_wall li .meta-header .avatar { margin-right: 10px; margin-bottom: 10px; float: left; }
+#facebook_wall li .meta-header .author { font-weight: bold; }
+#facebook_wall li .meta-header .author a { text-decoration: none; }
+#facebook_wall li .meta-header .date { display: none; }
+
+#facebook_wall li .message { color: #808080; margin-bottom: 16px; }
+#facebook_wall li .story { font-style: italic; color: #808080; margin-bottom: 16px; }
+#facebook_wall li .message a,
+#facebook_wall li .story a { color: #666; text-decoration: underline; }
+
+#facebook_wall li .media { height: 0; padding: 9px 10px; background: #fbfbfb url('images/hellip.png') no-repeat 10px 50%; border-top: 1px dotted #ccc; margin: 0 -10px 0 -10px; overflow: hidden; clear: both; cursor: pointer; }
+.no-js #facebook_wall li:hover .media { height: auto; padding: 10px 10px; cursor: auto; }
+#facebook_wall li .media * { opacity: 0; }
+.no-js #facebook_wall li:hover .media * { opacity: 1; }
+#facebook_wall li .media .image { margin-right: 10px; float: left; position: relative; }
+#facebook_wall li.type-video .media .image:after { width: 44px; height: 44px; background: url('images/play.png') no-repeat 50% 50%; margin-top: -22px; margin-left: -22px; position: absolute; top: 50%; left: 50%; content: " "; pointer-events: none; }
+#facebook_wall li .media .image img { max-width: 100%; height: auto; border: 1px solid #a1a1a1; }
+#facebook_wall li .media .media-meta { }
+#facebook_wall li .media .media-meta .name { font-weight: bold; }
+#facebook_wall li .media .media-meta .caption { font-style: italic; }
+#facebook_wall li .media .media-meta .description { }
+
+#facebook_wall li .meta-footer { font-size: 9px; line-height: 16px; color: #808080; padding: 10px; border-top: 1px dotted #ccc; margin: 0 -10px -10px -10px; clear: both; }
+#facebook_wall li .meta-footer .seperator { padding: 0 4px; }
+#facebook_wall li .meta-footer .date { }
+#facebook_wall li .meta-footer .likes { }
+#facebook_wall li .meta-footer .comments { }
+#facebook_wall li .meta-footer .share { }
+#facebook_wall li .meta-footer .actions { }
+#facebook_wall li .meta-footer .actions .like { }
+#facebook_wall li .meta-footer .actions .comment { }
+#facebook_wall li .meta-footer .actions .share { }
+
+#facebook_wall li ul.like-list { margin-top: 10px; }
+#facebook_wall li ul.like-list li.like { min-height: 16px; background: #f2f2f2; margin-top: 4px; display: block; }
+#facebook_wall li ul.like-list li.like:first-child { margin-top: 0; }
+#facebook_wall li ul.like-list li.like .meta-header .avatar { margin-top: -5px; margin-bottom: -5px; margin-left: -5px; }
+#facebook_wall li ul.like-list li.like .meta-header .avatar img { width: 26px; }
+#facebook_wall li ul.like-list li.like .meta-header .author { }
+
+#facebook_wall li ul.comment-list { margin-top: 10px; }
+#facebook_wall li ul.comment-list li.comment { min-height: 50px; padding: 10px 10px 10px 70px; background: #f2f2f2; margin-top: 4px; display: block; }
+#facebook_wall li ul.comment-list li.comment:first-child { margin-top: 0; }
+#facebook_wall li ul.comment-list li.comment .meta-header .avatar { padding-left: 0; background: none; margin-left: 0; position: absolute; top: 10px; left: 10px; }
+#facebook_wall li ul.comment-list li.comment .meta-header .author { width: auto; font-weight: bold; float: none; display: block; }
+#facebook_wall li ul.comment-list li.comment .meta-header .date { }
+#facebook_wall li ul.comment-list li.comment .message { margin-bottom: 0; }
+#facebook_wall li ul.comment-list li.comment .date { font-size: 9px; line-height: 16px; color: #a1a1a1; }
+#facebook_wall li ul.comment-list li.read_more { min-height: 1px; font-size: 9px; line-height: 16px; color: #a1a1a1; padding: 0 10px 0 72px; border-top: none; margin: 5px 0 -5px 0; display: block; }
+#facebook_wall li ul.comment-list li.read_more a { color: #a1a1a1; }
